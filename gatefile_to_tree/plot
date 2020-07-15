@@ -1,0 +1,5 @@
+TFile *ipf=new TFile("name.root");
+TTree *ipt=(TTree*)ipf->Get("tree");
+tree->Draw("total_edep:z>>(120,0,120,2000,0,8000000)");
+TGraph *gr=new TGraph(tree->GetSelectedRows(),tree->GetV2(),tree->GetV1());
+gr->Draw("*")
