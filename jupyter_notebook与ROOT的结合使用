@@ -1,0 +1,3 @@
+遇到问题/usr/bin/python2.7: No module named IPython，ROOT C++的kernel连接失败
+解决：需要下载metakernel，终端输入 pip install metakernel
+但是在python2.7和python3.6并存的时候需要调整，某次的解决方法是 python2 -m pip install metakernel
